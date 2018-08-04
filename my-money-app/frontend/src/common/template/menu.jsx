@@ -1,7 +1,12 @@
 import React from 'react'
+import MenuItem from './menuItem'
+import MenuTree from './menuTree'
 
 export default prop =>(
-    <ul className="sibebar-menu">
-        
+    <ul className="sidebar-menu">
+        <MenuItem path='#' label='Dashboard' icon='dashboard' /> 
+        <MenuTree label='Cadastro' icon='edit'>
+            <MenuItem path='#billingCycles' icon='usd' label='Ciclo de pagamentos' />
+        </MenuTree>       
     </ul>
 )
